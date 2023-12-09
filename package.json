@@ -1,0 +1,33 @@
+{
+    "name": "evm",
+    "version": "0.0.1",
+    "description": "My own EVM implementation",
+    "main": "index.js",
+    "scripts": {
+        "prettier:fix": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    },
+    "keywords": [
+        "evm"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/0xlino/evm.git"
+    },
+    "dependencies": {
+        "@ethereumjs/block": "4.0.0",
+        "@ethereumjs/common": "3.0.0",
+        "@ethereumjs/rlp": "^4.0.1",
+        "@ethereumjs/statemanager": "1.0.0",
+        "@ethereumjs/trie": "5.0.0",
+        "@ethereumjs/tx": "4.0.0",
+        "@ethereumjs/util": "8.0.0",
+        "@ethereumjs/vm": "6.0.0",
+        "@ethersproject/abi": "5.7.0",
+        "level": "^8.0.0",
+        "prettier-plugin-jsdoc": "^1.1.1",
+        "web3": "1.8.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.1.0"
+    }
+}
