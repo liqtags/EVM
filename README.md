@@ -1,6 +1,9 @@
 # EVM
 My Own Ethereum Virtual Machine Implementation. 
 
+## initEVM
+This module is used to config and start the EVM. 
+
 ## callEthereumVirtualMachine
 
 This module is used to call the Ethereum Virtual Machine (EVM).
