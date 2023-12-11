@@ -1,4 +1,4 @@
-import getCurrentBlock from './getCurrentBlock';
+import getCurrentBlock from './getCurrentBlockchainBlock';
 import Web3 from 'web3';
 
 // TODO: Fix this formatting
@@ -7,7 +7,7 @@ import Web3 from 'web3';
  * @description Returns a block object to store in the database
  * @param currentHash - current block hash
  */
-const getBlockToStore = (
+const getBlockToStoreInBlockchain = (
   currentHash
 ): {
   number: string;
@@ -77,4 +77,4 @@ const getBlockToStore = (
   return blockTemplate;
 };
 
-export default getBlockToStore;
+export default getBlockToStoreInBlockchain;

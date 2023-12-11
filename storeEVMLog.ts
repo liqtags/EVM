@@ -4,11 +4,11 @@
  * @param logsMap - Logs map
  * @param logInstance - Log instance
  */
-const storeLog = (logsMap, logInstance) => {
+const storeEVMLog = (logsMap, logInstance) => {
   if (!Array.isArray(logsMap[logInstance.address]))
     logsMap[logInstance.address] = [];
 
   logsMap[logInstance.address].push(logInstance);
 };
 
-export default storeLog;
+export default storeEVMLog;

@@ -10,7 +10,7 @@ import { vm } from './initEVM';
  * @param code - Code of the contract
  * @param storage - Storage of the contract
  */
-const putContract = async (
+const putEVMContract = async (
   address,
   balanceInNativeToken,
   nonce,
@@ -38,4 +38,4 @@ const putContract = async (
   await vm.stateManager.putContractCode(address, codeBuf);
 };
 
-export default putContract;
+export default putEVMContract;

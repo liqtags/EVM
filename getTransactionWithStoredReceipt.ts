@@ -1,7 +1,7 @@
 import { web3 } from './initEVM';
 import { Transaction } from '@ethereumjs/tx';
-import getCurrentBlock from './getCurrentBlock';
-import storeLog from './storeLog';
+import getCurrentBlock from './getCurrentBlockchainBlock';
+import storeLog from './storeEVMLog';
 
 /**
  * @description Returns a transaction object with receipt to store in the database
@@ -9,7 +9,7 @@ import storeLog from './storeLog';
  * @param evmResult - EVM result
  * @param logsMap - logs map
  */
-const getTransactionWithReceiptToStore = (
+const getTransactionWithStoredReceipt = (
   transactionInHex: string,
   evmResult: {
     receipt: any;
@@ -89,4 +89,4 @@ const getTransactionWithReceiptToStore = (
   }
 };
 
-export default getTransactionWithReceiptToStore;
+export default getTransactionWithStoredReceipt;

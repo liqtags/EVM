@@ -7,7 +7,7 @@ import { block, config, common } from './initEVM';
  * @param timestamp - Timestamp
  * @param parentHash - Parent hash
  */
-export const setCurrentBlockParams = (nextIndex, timestamp, parentHash) => {
+export const setParamsForCurrentBlock = (nextIndex, timestamp, parentHash) => {
   return Block.fromBlockData(
     {
       header: {
@@ -23,4 +23,4 @@ export const setCurrentBlockParams = (nextIndex, timestamp, parentHash) => {
   );
 };
 
-export default setCurrentBlockParams;
+export default setParamsForCurrentBlock;

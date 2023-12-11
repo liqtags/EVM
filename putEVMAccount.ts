@@ -8,7 +8,7 @@ import { vm } from './initEVM';
  * @param balanceInNativeToken - Balance of the account in native token
  * @param nonce - Nonce of the account
  */
-const putAccount = async (address, balanceInNativeToken, nonce = 0) => {
+const putEVMAccount = async (address, balanceInNativeToken, nonce = 0) => {
   let accountData = {
     nonce,
     balance: BigInt(balanceInNativeToken) * BigInt(10) ** BigInt(18)
@@ -25,4 +25,4 @@ const putAccount = async (address, balanceInNativeToken, nonce = 0) => {
   return status;
 };
 
-export default putAccount;
+export default putEVMAccount;

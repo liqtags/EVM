@@ -6,7 +6,7 @@ import { vm, block, web3, config as CONFIG, creds } from './initEVM';
  * @description Estimate gas used
  * @param txData - transaction data
  */
-const estimateGasUsed = async (txData): Promise<any> => {
+const estimateGasUsedForTransaction = async (txData): Promise<any> => {
   let tx = Transaction.fromTxData(txData);
 
   let { to, data } = tx;
@@ -66,4 +66,4 @@ const estimateGasUsed = async (txData): Promise<any> => {
   );
 };
 
-export default estimateGasUsed;
+export default estimateGasUsedForTransaction;

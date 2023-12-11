@@ -2,17 +2,17 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import callEthereumVirtualMachine from './callEthereumVirtualMachine';
 import sandboxEthereumVirtualMachineCall from './sandboxEthereumVirtualMachineCall';
-import putAccount from './putAccount';
-import putContract from './putContract';
-import getAccount from './getAccount';
-import getStateRoot from './getStateRoot';
-import setStateRoot from './setStateRoot';
-import estimateGasUsed from './estimateGasUsed';
-import getCurrentBlock from './getCurrentBlock';
-import setCurrentBlockParams from './setCurrentBlockParams';
-import getTransactionWithReceiptToStore from './getTransactionWithReceiptToStore';
-import getBlockToStore from './getBlockToStore';
-import storeLog from './storeLog';
+import putAccount from './putEVMAccount';
+import putContract from './putEVMContract';
+import getAccount from './getEVMAccount';
+import getStateRoot from './getStateRootForEVM';
+import setStateRoot from './setEVMStateRoot';
+import estimateGasUsed from './estimateGasUsedForTransaction';
+import getCurrentBlock from './getCurrentBlockchainBlock';
+import setCurrentBlockParams from './setParamsForCurrentBlock';
+import getTransactionWithReceiptToStore from './getTransactionWithStoredReceipt';
+import getBlockToStore from './getBlockToStoreInBlockchain';
+import storeLog from './storeEVMLog';
 
 // Create the express application
 const app = express();
